@@ -79,4 +79,5 @@ class MainActivity : AppCompatActivity() {
 }
 
 ```
+![](blob:https://web.telegram.org/b6bd007c-6a1c-4b24-9adf-1260ada4918f)
 
