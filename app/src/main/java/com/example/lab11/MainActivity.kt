@@ -25,14 +25,14 @@ class MainActivity : AppCompatActivity() {
         {
             fun onClick(v: View)
             {
-                val phoneNo: String = mPhoneNoEt
+                val phoneNo: String = mPhoneNoEt.text.toString()
                 if(!TextUtils.isEmpty(phoneNo))
                 {
                     val dial: String = "tel:" + phoneNo
                     startActivity(Intent(Intent.ACTION_CALL, Uri.parse(dial)));
                 }
                 else {
-                    Toast.makeText(MainActivity.this, "Введите номер телефона", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Введите номер телефона", Toast.LENGTH_SHORT).show()
                 }
             }
         });
